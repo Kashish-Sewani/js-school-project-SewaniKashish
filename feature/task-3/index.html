@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timeline App</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Timeline App Logo" />
+        <button id="theme-toggle">
+            <i class="far fa-moon"></i>
+        </button>
+    </header>
+
+    <nav aria-label="Timeline filters">
+        <button>All</button>
+        <button>Work</button>
+        <button>Personal</button>
+    </nav>
+
+    <main>
+        <section id="timeline">       
+        </section>
+    </main>
+
+
+    <div id="modal" hidden>
+        <div class="modal-content">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
