@@ -1,0 +1,58 @@
+[
+  {
+    "year": "2001",
+    "title": "Launch of Wikipedia",
+    "description": "Wikipedia goes live, becoming one of the largest free information sources in the world.",
+    "imageURL": "../assets/event1.png",
+    "category": "Technology"
+  },
+  {
+    "year": "2004",
+    "title": "Facebook Founded",
+    "description": "Mark Zuckerberg launches Facebook at Harvard University.",
+    "imageURL": "../assets/event2.jpg",
+    "category": "Technology"
+  },
+  {
+    "year": "2008",
+    "title": "Beijing Olympics",
+    "description": "China hosts the Summer Olympics with an extravagant opening ceremony.",
+    "imageURL": "../assets/event3.png",
+    "category": "Sports"
+  },
+  {
+    "year": "2010",
+    "title": "Instagram Launched",
+    "description": "A photo-sharing app called Instagram launches and quickly gains popularity.",
+    "imageURL": "../assets/event4.png",
+    "category": "Technology"
+  },
+  {
+    "year": "2014",
+    "title": "World Cup in Brazil",
+    "description": "Germany wins the FIFA World Cup after defeating Argentina in the final.",
+    "imageURL": "../assets/event5.jpg",
+    "category": "Sports"
+  },
+  {
+    "year": "2023",
+    "title": "India Reaches Cricket World Cup Final",
+    "description": " India delivers a dominant performance throughout the tournament but finishes as runners-up to Australia in the ICC Cricket World Cup.",
+    "imageURL": "../assets/event6.jpg",
+    "category": "Sports"
+  },
+  {
+    "year": "2020",
+    "title": "SpaceX Launches First Crew to ISS",
+    "description": "SpaceX’s Crew Dragon becomes the first privately built spacecraft to carry astronauts to the International Space Station.",
+    "imageURL": "../assets/event7.jpg",
+    "category": "Global"
+  },
+  {
+    "year": "2020",
+    "title": "COVID-19 Pandemic",
+    "description": "A global pandemic changes the world, affecting billions of lives.",
+    "imageURL": "../assets/event8.jpg",
+    "category": "Global"
+  }
+]
