@@ -1,69 +1,26 @@
-# React + TypeScript + Vite
+# Stage 5 - React + TypeScript Timeline App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description  
+This project rebuilds the **Timeline UI** as a React application using **Vite** with the **React + TypeScript template**. It is component-driven and demonstrates reusable UI patterns and state management with React hooks.  
 
-Currently, two official plugins are available:
+## Features   
+- Modular component structure for better reusability  
+- Light/Dark theme toggle  
+- Interactive **Timeline** with clickable events  
+- **Event modal** for detailed event information    
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Components  
+- **`<Header>`** → Displays the logo and theme switch  
+- **`<Timeline>`** → Maps over event data and renders `<EventMarker>`  
+- **`<EventMarker>`** → Represents each event (year/title) and handles click to open modal 
+- **`<EventModal>`** → Shows event details  
+ 
 
-## Expanding the ESLint configuration
+## State Management  
+- **`useState`** for managing:  
+  - Active theme (light/dark)  
+  - Selected event  
+  - Modal visibility  
+- **`useEffect`** to load data and update UI based on user actions  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
