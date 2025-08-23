@@ -1,7 +1,7 @@
 # JavaScript School Project – Timeline App
 
 This project was developed as part of the **DataArt JavaScript School in India 2025**.  
-It demonstrates core front-end skills with **React, TypeScript, and Web Accessibility)**.  
+It demonstrates core front-end skills with **React, TypeScript, and Web Accessibility**.  
 
 ## Features
 - Responsive timeline of events built with React + TypeScript
